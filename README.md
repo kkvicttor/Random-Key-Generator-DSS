@@ -36,11 +36,15 @@ de critérios definidos pelo usuário.
 - Utilização de caracteres especiais
 - Geração aleatória de senhas
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias utilizadas
 
 - Linguagem C
-- Visual Studio Code
-- Git/GitHub
+- VS CODE
+- Git
+- GitHub
+- Dev C++
+- C99
+  
 
 ## 📁 Estrutura do projeto
 

@@ -1,6 +1,5 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1E90FF&height=180&section=header&text=🔐%20Key%20Generator&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35">
 
-# Random-Key-Generator-C99
 # 🔐 Gerador de Senhas
 
 Projeto acadêmico desenvolvido para a disciplina
@@ -38,12 +37,14 @@ de critérios definidos pelo usuário.
 
 ## 🛠️ Tecnologias utilizadas
 
-- Linguagem C
-- VS CODE
-- Git
-- GitHub
-- Dev C++
-- C99
+<p align="center">
+
+![C](https://img.shields.io/badge/C-99-1E90FF?style=for-the-badge&logo=c&logoColor=white)
+![Git](https://img.shields.io/badge/Git-Controle%20de%20Versão-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-IDE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+
+</p>
   
 
 ## 📁 Estrutura do projeto (provisória)

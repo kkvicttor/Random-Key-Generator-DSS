@@ -48,7 +48,6 @@ funções e modularização.
 
 ## 📁 Estrutura do projeto (provisória)
 
-```text
 src/
 ├── main.c
 ├── senha.c

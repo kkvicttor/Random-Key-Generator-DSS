@@ -5,8 +5,11 @@ Projeto acadêmico desenvolvido para a disciplina
 Linguagem e Técnicas de Programação.
 # Alunos responsáveis:
 Kaik Victtor Nascimento da Silva
+
 Guilherme Luís Camargo
+
 Pedro Guedes
+
 Daniel Machado
 
 Proposto pelo Professor Dacio Machado.

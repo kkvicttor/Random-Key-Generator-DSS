@@ -8,17 +8,10 @@ Linguagem e Técnicas de Programação.
 Professor Dacio Machado
 
 ## 📷 Alunos responsáveis:
-
-Kaik Victtor Nascimento da Silva
-
- <a> href="https://www.instagram.com/victto.rrx/" </a>
- 
-Guilherme Luís Camargo
-
-Pedro Guedes
-
-Daniel Machado
-
+- [Kaik Victtor Nascimento da Silva](https://github.com/kkvicttor)
+- [Guilherme Luís Camargo](https://github.com/GuilhermeLuiscamargo)
+- [Pedro Guedes](https://github.com/pedroguedes04)
+- [Daniel Machado](https://github.com/Dan1elMa)
 
 
 ## 📌 Sobre o projeto

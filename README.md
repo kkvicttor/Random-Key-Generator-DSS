@@ -1,3 +1,6 @@
+![Cabeçalho: Gerador de Senhas](https://capsule-render.vercel.app/api?type=wave&color=auto&height=250&section=header&text=Gerador%20de%20Senhas&fontSize=60)
+
+
 # Random-Key-Generator-C99
 # 🔐 Gerador de Senhas
 

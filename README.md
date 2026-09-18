@@ -5,7 +5,7 @@
 
 Projeto acadêmico desenvolvido para a disciplina
 Linguagem e Técnicas de Programação.
-![linguagem](https://img.shields.io/badge/-C-blue?logo=c)
+![linguagem](https://img.shields.io/badge/-blue?logo=c)
 
 ## 👨🏻‍🏫 Proposto por:
 Professor Dacio Machado

@@ -1,7 +1,9 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1E90FF&height=180&section=header&text=🔐%20Key%20Generator&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35">
 
-# 🔐 Gerador de Senhas
-
+<p align="center">
+  <strong>Gerador de senhas aleatórias desenvolvido em C99</strong><br>
+  Projeto acadêmico da disciplina de Linguagem e Técnicas de Programação.
+</p>
 Projeto acadêmico desenvolvido para a disciplina
 Linguagem e Técnicas de Programação.
 

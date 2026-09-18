@@ -1,4 +1,4 @@
-![Cabeçalho: Key Generator](https://capsule-render.vercel.app/api?type=wave&color=auto&height=250&section=header&text=Key%20Generator%20&fontSize=40)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1E90FF&height=180&section=header&text=🔐%20Key%20Generator&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35">
 
 # Random-Key-Generator-C99
 # 🔐 Gerador de Senhas

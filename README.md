@@ -4,9 +4,6 @@
   <strong>Gerador de senhas aleatórias desenvolvido em C99</strong><br>
   Projeto acadêmico da disciplina de Linguagem e Técnicas de Programação.
 </p>
-Projeto acadêmico desenvolvido para a disciplina
-Linguagem e Técnicas de Programação.
-
 
 ## 👨🏻‍🏫 Proposto por:
 Professor Dacio Machado

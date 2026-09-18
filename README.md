@@ -46,7 +46,7 @@ de critérios definidos pelo usuário.
 - C99
   
 
-## 📁 Estrutura do projeto
+## 📁 Estrutura do projeto (provisória)
 
 ```text
 src/

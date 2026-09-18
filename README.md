@@ -5,6 +5,7 @@
 
 Projeto acadêmico desenvolvido para a disciplina
 Linguagem e Técnicas de Programação.
+![linguagem](https://img.shields.io/badge/Linguagem-C-blue?logo=c)
 
 ## 👨🏻‍🏫 Proposto por:
 Professor Dacio Machado
@@ -21,7 +22,7 @@ Professor Dacio Machado
 O Gerador de Senhas é uma aplicação desenvolvida em linguagem C
 com o objetivo de permitir a criação de senhas aleatórias a partir
 de critérios definidos pelo usuário.
-![linguagem](https://img.shields.io/badge/Linguagem-C-blue?logo=c)
+
 
 ## ⚙️ Funcionalidades
 

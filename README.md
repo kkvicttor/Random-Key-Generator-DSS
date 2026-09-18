@@ -5,7 +5,9 @@
 
 Projeto acadêmico desenvolvido para a disciplina
 Linguagem e Técnicas de Programação.
-![linguagem](https://img.shields.io/badge/?logo=c)
+
+![linguagem](https://img.shields.io/badge/Linguagem-C-blue?logo=c)
+
 
 
 ## 👨🏻‍🏫 Proposto por:

@@ -38,7 +38,7 @@ de critérios definidos pelo usuário.
 
 <p align="center">
 
-![C](https://img.shields.io/badge/1E90FFC-99-?style=for-the-badge&logo=c&logoColor=white)
+![C](https://img.shields.io/badge/Linguagem-C-blue?logo=c)
 ![GitHub](https://img.shields.io/badge/GitHub-Repositório-181717?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-IDE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 

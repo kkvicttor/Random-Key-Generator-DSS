@@ -45,17 +45,22 @@ funções e modularização.
 
 </p>
   
+<p align="center"> <img src="https://img.shields.io/badge/Linguagem-C99-1E90FF?style=for-the-badge&logo=c&logoColor=white"> <img src="https://img.shields.io/badge/Projeto-Acadêmico-1E90FF?style=for-the-badge"> </p> ```
+## 📁 Estrutura do projeto
 
-## 📁 Estrutura do projeto (provisória)
+```text
+Random-Key-Generator-C99/
+│
+├── 📁 src/
+│   ├── main.c
+│   ├── senha.c
+│   └── senha.h
+│
+├── 📁 docs/
+│   ├── documentacao.pdf
+│   ├── fluxograma.pdf
+│   └── estruturas.pdf
+│
+├── 📄 .gitignore
+└── 📄 README.md
 
-src/
-├── main.c
-├── senha.c
-└── senha.h
-
-docs/
-├── documentacao.pdf
-├── fluxograma.pdf
-└── estruturas.pdf
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1E90FF&height=100&section=footer">

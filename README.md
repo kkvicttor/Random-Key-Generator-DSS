@@ -24,9 +24,6 @@ senhas aleatórias de acordo com critérios definidos pelo usuário,
 aplicando conceitos de lógica de programação, estruturas de dados,
 funções e modularização.
 
-![linguagem](https://img.shields.io/badge/Linguagem-C-blue?logo=c)
-
-
 ## ⚙️ Funcionalidades
 
 - Definição do tamanho da senha

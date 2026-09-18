@@ -24,15 +24,15 @@ senhas aleatórias de acordo com critérios definidos pelo usuário,
 aplicando conceitos de lógica de programação, estruturas de dados,
 funções e modularização.
 
-## ⚙️ Funcionalidades
+## 🔐 Funcionalidades
 
-- Definição do tamanho da senha
-- Utilização de letras maiúsculas
-- Utilização de letras minúsculas
-- Utilização de números
-- Utilização de caracteres especiais
-- Geração aleatória de senhas
-
+- 🔢 Definição do tamanho da senha
+- 🔠 Letras maiúsculas
+- 🔡 Letras minúsculas
+- 🔢 Números
+- 🔣 Caracteres especiais
+- 🎲 Geração aleatória
+  
 ## 🛠️ Tecnologias utilizadas
 
 <p align="center">

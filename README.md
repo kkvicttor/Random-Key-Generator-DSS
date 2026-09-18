@@ -11,11 +11,12 @@ Linguagem e Técnicas de Programação.
 Professor Dacio Machado
 
 ## 📷 Alunos responsáveis:
-- [Kaik Victtor Nascimento da Silva](https://github.com/kkvicttor)
-- [Guilherme Luís Camargo](https://github.com/GuilhermeLuiscamargo)
-- [Pedro Guedes](https://github.com/pedroguedes04)
-- [Daniel Machado](https://github.com/Dan1elMa)
-
+| Aluno | GitHub |
+|-------|--------|
+| [![Kaik](https://avatars.githubusercontent.com/kkvicttor?s=50)](https://github.com/kkvicttor) **Kaik Victtor Nascimento da Silva** | [KaikVicttor](https://github.com/kkvicttor) |
+| [![Guilherme](https://avatars.githubusercontent.com/GuilhermeLuiscamargo?s=50)](https://github.com/GuilhermeLuiscamargo) **Guilherme Luís Camargo** | [GuilhermeLuiz](https://github.com/GuilhermeLuiscamargo) |
+| [![Pedro](https://avatars.githubusercontent.com/pedroguedes04?s=50)](https://github.com/pedroguedes04) **Pedro Guedes** | [PedroGuedes](https://github.com/pedroguedes04) |
+| [![Daniel](https://avatars.githubusercontent.com/Dan1elMa?s=50)](https://github.com/Dan1elMa) **Daniel Machado** | [DanielMachado](https://github.com/Dan1elMa) |
 
 ## 📌 Sobre o projeto
 

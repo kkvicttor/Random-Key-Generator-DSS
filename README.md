@@ -1,6 +1,5 @@
 ![Cabeçalho: Key Generator](https://capsule-render.vercel.app/api?type=wave&color=auto&height=250&section=header&text=Key%20Generator%20&fontSize=40)
 
-
 # Random-Key-Generator-C99
 # 🔐 Gerador de Senhas
 
@@ -22,6 +21,7 @@ Professor Dacio Machado
 O Gerador de Senhas é uma aplicação desenvolvida em linguagem C
 com o objetivo de permitir a criação de senhas aleatórias a partir
 de critérios definidos pelo usuário.
+![linguagem](https://img.shields.io/badge/Linguagem-C-blue?logo=c)
 
 ## ⚙️ Funcionalidades
 

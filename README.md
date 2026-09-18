@@ -17,11 +17,12 @@
 | [![Pedro](https://avatars.githubusercontent.com/pedroguedes04?s=50)](https://github.com/pedroguedes04) **Pedro Guedes** | [PedroGuedes](https://github.com/pedroguedes04) |
 | [![Daniel](https://avatars.githubusercontent.com/Dan1elMa?s=50)](https://github.com/Dan1elMa) **Daniel Machado** | [DanielMachado](https://github.com/Dan1elMa) |
 
-## 📌 Sobre o projeto
+## 🎯 Objetivo
 
-O Gerador de Senhas é uma aplicação desenvolvida em linguagem C
-com o objetivo de permitir a criação de senhas aleatórias a partir
-de critérios definidos pelo usuário.
+Desenvolver um gerador de senhas em linguagem C capaz de criar
+senhas aleatórias de acordo com critérios definidos pelo usuário,
+aplicando conceitos de lógica de programação, estruturas de dados,
+funções e modularização.
 
 ![linguagem](https://img.shields.io/badge/Linguagem-C-blue?logo=c)
 

@@ -5,8 +5,9 @@
   Projeto acadêmico da disciplina de Linguagem e Técnicas de Programação.
 </p>
 
-## 👨🏻‍🏫 Proposto por:
-Professor Dacio Machado
+## 👨🏻‍🏫 Professor
+
+**Dacio Machado**
 
 ## 📷 Alunos responsáveis:
 | Aluno | GitHub |

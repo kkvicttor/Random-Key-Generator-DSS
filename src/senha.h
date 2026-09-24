@@ -5,3 +5,11 @@
 #define MAX_SENHAS 100
 #define ARQUIVO_SENHAS "senhas.txt"
 #define ARQUIVO_TEMP "senhas_temp.txt"
+
+// Dados de uma senha gerada 
+
+struct Senha {
+    int id;
+    char texto[TAM_MAX_SENHA + 1];
+    int tamanho;
+};

@@ -14,11 +14,18 @@ struct Senha {
     int tamanho;
 };
 
-// Escolhas do usuario para gerar a senha (1 = sim, 0 = nao) 
+// Escolhas do usuario para gerar a senha (1 = sim, 0 = não) 
 struct ConfiguracaoSenha {
     int tamanho;
     int usarMaiusculas;
     int usarMinusculas;
     int usarNumeros;
     int usarEspeciais;
+};
+
+// Senhas guardadas em memória durante a execução 
+struct ListaSenhas {
+    struct Senha senhas[MAX_SENHAS];
+    int quantidade;
+    int proximoId;
 };

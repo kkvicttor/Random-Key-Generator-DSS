@@ -13,3 +13,12 @@ struct Senha {
     char texto[TAM_MAX_SENHA + 1];
     int tamanho;
 };
+
+// Escolhas do usuario para gerar a senha (1 = sim, 0 = nao) 
+struct ConfiguracaoSenha {
+    int tamanho;
+    int usarMaiusculas;
+    int usarMinusculas;
+    int usarNumeros;
+    int usarEspeciais;
+};

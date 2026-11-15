@@ -138,6 +138,7 @@ void criarSenha(Senha **senhas, int *quantidade, int *capacidade, int *proximoId
     printf("Senha gerada: %s\n", nova.senha);
 }
 
+// Lista todas as senhas cadastradas no sistema.
 void verificarSenhas(const Senha *senhas, int quantidade) {
     int i;
 
@@ -178,6 +179,7 @@ int main(void) {
                 limparTela();
                 criarSenha(&senhas, &quantidade, &capacidade, &proximoId);
                 break;
+            
             case 2:
                 limparTela();
                 verificarSenhas(senhas, quantidade);

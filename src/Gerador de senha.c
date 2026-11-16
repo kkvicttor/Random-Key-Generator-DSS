@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <limits.h>
-#include <stdint.h>
+
+
 
 // Guarda o ID e o texto de cada senha.
 typedef struct {
@@ -28,18 +28,23 @@ void menu(void) {
 
 // Le um numero e verifica se esta dentro do intervalo permitido.
 int validarOpcao(int minimo, int maximo) {
-    int opcao, leitura, c;
+    int opcao;
+    char entrada[100];
+    char extra;
+
     do {
-        opcao = 0;
         printf("Opcao: ");
-        leitura = scanf("%d", &opcao);
-        // Descarta caracteres que sobraram na linha digitada.
-        while ((c = getchar()) != '\n' && c != EOF) {}
-        if (leitura == EOF || c == EOF) return -1;
-        if (leitura != 1 || opcao < minimo || opcao > maximo)
+// Le a entrada informada pelo usuario
+        if (fgets(entrada, sizeof(entrada), stdin) == NULL)
+            return -1;
+//verifica se existe algum carater em conjunto com o numero informado
+        if (sscanf(entrada, " %d %c", &opcao, &extra) != 1 ||
+            opcao < minimo || opcao > maximo) {
             printf("\nOpcao invalida! Digite novamente.\n");
-    } while (leitura != 1 || opcao < minimo || opcao > maximo);
-    return opcao;
+        } else {
+            return opcao;
+        }
+    } while (1);
 }
 
 // Permite escolher os tipos de caracteres, sem repetir opcoes.
@@ -48,11 +53,12 @@ int selecionarCaracteres(int selecionados[4]) {
     do {
         printf("\n========== TIPOS DE CARACTERES ==========\n");
         printf("Selecione um tipo de caractere:\n");
+//coloca na tela as opções que ainda não foram selecionadas
         if (!selecionados[0]) printf("1 - Letras minusculas (a-z)\n");
         if (!selecionados[1]) printf("2 - Letras maiusculas (A-Z)\n");
         if (!selecionados[2]) printf("3 - Caracteres especiais\n");
         if (!selecionados[3]) printf("4 - Numeros (0-9)\n");
-
+//impede que uma opção já selecionada seja selecionada novamente
         do {
             opcao = validarOpcao(1, 4);
             if (opcao == -1) return 0;
@@ -60,11 +66,11 @@ int selecionarCaracteres(int selecionados[4]) {
                 printf("\nTipo ja selecionado! Escolha outro.\n");
         } while (selecionados[opcao - 1]);
 
-        // Marca a opcao escolhida como selecionada.
+// Marca a opcao escolhida como selecionada.
         selecionados[opcao - 1] = 1;
         quantidadeTipos++;
         if (quantidadeTipos == 4) break;
-
+//verifica se o usuario quer outra opção, caso não deseje mais opções encerra a função
         printf("\nDeseja adicionar outro tipo de caractere?\n");
         printf("1 - Sim\n2 - Nao\n");
         resposta = validarOpcao(1, 2);
@@ -77,16 +83,16 @@ int selecionarCaracteres(int selecionados[4]) {
 void gerarSenha(char destino[27], int tamanho, const int selecionados[4]) {
     char caracteres[100] = "";
     int i, total;
-    // Junta os caracteres das categorias escolhidas.
+// Junta os caracteres das categorias escolhidas.
     if (selecionados[0]) strcat(caracteres, "abcdefghijklmnopqrstuvwxyz");
     if (selecionados[1]) strcat(caracteres, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     if (selecionados[2]) strcat(caracteres, "!@#$%&*()-_=+?");
     if (selecionados[3]) strcat(caracteres, "0123456789");
     total = (int)strlen(caracteres);
-    // Sorteia um caractere permitido para cada posicao da senha.
+// Sorteia um caractere permitido para cada posicao da senha.
     for (i = 0; i < tamanho; i++)
         destino[i] = caracteres[rand() % total];
-    // Marca o fim da senha como texto em C.
+// Marca o fim da senha como texto em C.
     destino[tamanho] = '\0';
 }
 
@@ -102,20 +108,13 @@ void criarSenha(Senha **senhas, int *quantidade, int *capacidade, int *proximoId
     if (tamanho == -1) return;
     if (!selecionarCaracteres(selecionados)) return;
 
-    if (*proximoId == INT_MAX) {
-        printf("\nLimite de IDs atingido.\n");
-        return;
-    }
+
     // Aumenta o array em uma posicao quando nao houver espaco.
     if (*quantidade >= *capacidade) {
         int novaCapacidade;
         Senha *temporario;
-        if (*capacidade == INT_MAX ||
-            (size_t)(*capacidade + 1) > SIZE_MAX / sizeof(Senha)) {
-            printf("\nLimite de memoria atingido.\n");
-            return;
-        }
         novaCapacidade = *capacidade + 1;
+        
         // Tenta aumentar a memoria sem perder os registros existentes.
         temporario = realloc(*senhas, (size_t)novaCapacidade * sizeof(Senha));
         if (temporario == NULL) {

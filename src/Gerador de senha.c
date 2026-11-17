@@ -137,6 +137,48 @@ void criarSenha(Senha **senhas, int *quantidade, int *capacidade, int *proximoId
     printf("Senha gerada: %s\n", nova.senha);
 }
 
+// Exclui uma senha do vetor pelo ID e retorna a nova quantidade de senhas.
+int excluirSenha(Senha senhas[], int quantidade) {
+    int i, id = 0, posicao;
+
+    printf("\n========== EXCLUIR SENHA ==========\n");
+
+    if (quantidade == 0) {
+        printf("\nNenhuma senha cadastrada.\n");
+        return quantidade;
+    }
+
+    // Mostra as senhas para o usuario saber qual ID digitar.
+    for (i = 0; i < quantidade; i++) {
+        printf("SENHA-%d | %s\n", senhas[i].id, senhas[i].senha);
+    }
+
+    printf("\nDigite o ID da senha que deseja excluir: ");
+    scanf("%d", &id);
+    getchar();
+
+    // Procura a posicao da senha no vetor. Se nao achar, posicao fica -1.
+    posicao = -1;
+    for (i = 0; i < quantidade; i++) {
+        if (senhas[i].id == id) {
+            posicao = i;
+        }
+    }
+
+    if (posicao == -1) {
+        printf("\nSenha nao encontrada.\n");
+        return quantidade;
+    }
+
+    // Puxa as senhas seguintes uma posicao para tras.
+    for (i = posicao; i < quantidade - 1; i++) {
+        senhas[i] = senhas[i + 1];
+    }
+
+    printf("\nSenha excluida com sucesso!\n");
+    return quantidade - 1;
+}
+
 // Inicia o programa e controla as opcoes do menu.
 int main(void) {
     int quantidade = 0, capacidade = 5, proximoId = 1;
@@ -171,8 +213,7 @@ int main(void) {
                 break;
             case 4:
                 limparTela();
-                printf("\n========== EXCLUIR SENHA ==========\n");
-                printf("Funcionalidade ainda nao implementada.\n");
+                quantidade = excluirSenha(senhas, quantidade);
                 break;
             case 5:
                 printf("\nEncerrando o programa.\n");

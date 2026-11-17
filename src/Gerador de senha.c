@@ -53,12 +53,12 @@ int selecionarCaracteres(int selecionados[4]) {
     do {
         printf("\n========== TIPOS DE CARACTERES ==========\n");
         printf("Selecione um tipo de caractere:\n");
-//coloca na tela as opÁıes que ainda n„o foram selecionadas
+//coloca na tela as op√ß√µes que ainda n√£o foram selecionadas
         if (!selecionados[0]) printf("1 - Letras minusculas (a-z)\n");
         if (!selecionados[1]) printf("2 - Letras maiusculas (A-Z)\n");
         if (!selecionados[2]) printf("3 - Caracteres especiais\n");
         if (!selecionados[3]) printf("4 - Numeros (0-9)\n");
-//impede que uma opÁ„o j· selecionada seja selecionada novamente
+//impede que uma op√ß√£o j√° selecionada seja selecionada novamente
         do {
             opcao = validarOpcao(1, 4);
             if (opcao == -1) return 0;
@@ -70,7 +70,7 @@ int selecionarCaracteres(int selecionados[4]) {
         selecionados[opcao - 1] = 1;
         quantidadeTipos++;
         if (quantidadeTipos == 4) break;
-//verifica se o usuario quer outra opÁ„o, caso n„o deseje mais opÁıes encerra a funÁ„o
+//verifica se o usuario quer outra op√ß√£o, caso n√£o deseje mais op√ß√µes encerra a fun√ß√£o
         printf("\nDeseja adicionar outro tipo de caractere?\n");
         printf("1 - Sim\n2 - Nao\n");
         resposta = validarOpcao(1, 2);
@@ -179,6 +179,24 @@ int excluirSenha(Senha senhas[], int quantidade) {
     return quantidade - 1;
 }
 
+void verificarSenhas(const Senha *senhas, int quantidade) {
+    int i;
+
+    printf("\n========== VERIFICAR SENHAS ==========\n");
+
+    if (quantidade == 0) {
+        printf("\nNenhuma senha cadastrada no momento.\n");
+        return;
+    }
+
+    printf("\nTotal de senhas cadastradas: %d\n\n", quantidade);
+
+    for (i = 0; i < quantidade; i++) {
+        printf("Identificador: SENHA-%d | Senha: %s\n", senhas[i].id, senhas[i].senha);
+    }
+}
+
+
 // Inicia o programa e controla as opcoes do menu.
 int main(void) {
     int quantidade = 0, capacidade = 5, proximoId = 1;
@@ -203,8 +221,7 @@ int main(void) {
                 break;
             case 2:
                 limparTela();
-                printf("\n========== VERIFICAR SENHAS ==========\n");
-                printf("Funcionalidade ainda nao implementada.\n");
+                verificarSenhas(senhas, quantidade);
                 break;
             case 3:
                 limparTela();
